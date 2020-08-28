@@ -1,4 +1,5 @@
 <template functional>
+  <!-- if we turn this component to a normal component, not functional, the bug disappear -->
   <div class="exitBtnDiv" v-on="listeners">
     <span>functional Component Click To Trigger BUG !</span>
   </div>

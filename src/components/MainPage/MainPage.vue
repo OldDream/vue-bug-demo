@@ -1,10 +1,10 @@
 <template>
   <div class="scrollDiv">
-    <!-- 自动导览，退出开关  故障之源 functional的原因？？？？ -->
     <ExitAutoNaviBtn v-if="isAutoNavStarted" @click="toggle" />
-    <!-- 地图容器 -->
+    <!-- bug shows up in the dom below, if we add v-once or give it a key, the bug disappear. 
+      So I think there might be a bug during diff and patch.
+    -->
     <div id="aMapContainer"></div>
-    <!-- 底部导航条 -->
     <div class="navWrapper" v-show="!isAutoNavStarted">
       <nav-bar
         
@@ -12,7 +12,6 @@
         ref="navBar"
       ></nav-bar>
     </div>
-    <!-- 附近景点列表按钮 -->
     <div class="btn" v-if="!isAutoNavStarted" @click="toggle">Click Me First</div>
   </div>
 </template>
@@ -20,7 +19,7 @@
 <script>
 import { loadAMapClass, initAMapInstance } from '@/tools/LoadAmap';
 let AMap = null,
-  aMapObj = null; // 高德地图实例
+  aMapObj = null;
 
 export default {
   name: 'MainPage',
