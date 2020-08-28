@@ -1,0 +1,35 @@
+.scrollDiv {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #f2f4f5;
+  display: flex;
+  flex-direction: column;
+
+  .navWrapper {
+    position: relative;
+    z-index: 3000;
+  }
+
+  // 地图容器
+  #aMapContainer {
+    font-size: medium !important;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+
+  }
+
+  .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    z-index: 11;
+  }
+
+}
