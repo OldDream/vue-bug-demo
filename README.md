@@ -1,4 +1,4 @@
-# Vue Bug example
+# Vue bug demo
 
 ## Follow the step to trigger bug
 
