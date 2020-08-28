@@ -12,6 +12,9 @@
 ### This is DOM tree after bug showup
 ![alt text](./articleImg/after.png)
 
+### Bug looks like this
+![alt text](./articleImg/lookslike.png)
+
 ## Build Setup
 
 ``` bash
