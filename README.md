@@ -7,7 +7,7 @@
 2. Then  Click 'functional Component Click To Trigger BUG !'
 3. Now we can see the DOM in **worng order**.
 
-### This is normal DOM tree
+### This is what DOM tree should be
 ![alt text](./articleImg/before.png)
 
 ### This is DOM tree after bug showup
