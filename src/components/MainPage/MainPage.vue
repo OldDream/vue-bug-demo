@@ -17,10 +17,6 @@
 </template>
 
 <script>
-import { loadAMapClass, initAMapInstance } from '@/tools/LoadAmap';
-let AMap = null,
-  aMapObj = null;
-
 export default {
   name: 'MainPage',
   components: {
@@ -60,17 +56,17 @@ export default {
   methods: {
     toggle() {
       this.isAutoNavStarted = !this.isAutoNavStarted
+    },
+    addDom() {
+      let node1 = document.querySelector('#aMapContainer')
+      node1.innerHTML = `<div class="dynamicAdded">this DOM is added by  Vanilla JS after mounted</div>`
     }
   },
 
   async mounted() {
-    let res = await Promise.all([loadAMapClass()]);
-    AMap = res[0];
-    aMapObj = initAMapInstance();
-    console.log(AMap)
-    console.log(aMapObj)
+    this.addDom()
   },
 };
 </script>
 
-<style lang="scss" scoped src="./MainPage.scss"></style>
+<style lang="scss" src="./MainPage.scss"></style>
