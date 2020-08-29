@@ -2,7 +2,7 @@
 
 ## Follow the step to trigger bug
 
-0. start dev server, open the web wait untill the map Loaded.
+0. start dev server, open the web .
 1. click "Click Me First" btn on the top left of screen.
 2. Then  Click 'functional Component Click To Trigger BUG !'
 3. Now we can see the DOM in **worng order**.
