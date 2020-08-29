@@ -1,4 +1,3 @@
-const TerserPlugin = require('terser-webpack-plugin')
 module.exports = {
   chainWebpack: config => {
     // config.module.rules.delete('eslint');

@@ -1,28 +1,19 @@
 <template>
   <div id="app">
-    <router-view name="MainPage" />
-    <keep-alive :include="keepAliveComponents">
-      <router-view />
-    </keep-alive>
+    <MainPage />
   </div>
 </template>
 
 <script>
-import { mapState } from 'vuex';
 
 export default {
   name: 'app',
   components: {
+    MainPage: ()=>import('./components/MainPage/MainPage.vue')
   },
   data() {
     return {
-      show: false,
     };
-  },
-  computed: {
-    ...mapState({
-      keepAliveComponents: (state) => state.keepAliveComponents,
-    }),
   },
   methods: {
 
