@@ -1,5 +1,17 @@
 # Vue bug demo
 
+
+
+### Official reply
+
+https://github.com/vuejs/vue/issues/11626#event-3706806980
+
+If we need to do manual DOM manipulation, we should isolate these DOM in a Component.
+
+
+
+
+
 ## Follow the step to trigger bug
 
 0. start dev server, open the web .
